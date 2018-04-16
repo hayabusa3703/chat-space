@@ -1,0 +1,25 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// $chat__side1backcolor: #253141;
+
+.chat__side {
+  height: 100vh;
+  width: 300px;
+  float: left;
+
+
+  &-1 {
+    height: 15%;
+    width: 100%;
+    background-color: $chat__side1backcolor;
+    position: relative;
+  }
+
+  &-2 {
+    height: 85%;
+    width: 100%;
+    background-color: $chat__side2backcolor;
+  }
+}

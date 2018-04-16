@@ -1,4 +1,28 @@
-%p Hello
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+  %body
+    %header.header
+      .chat-side
+    .contents
+      .left-content
+      .contents-main
+        %footer.footer
 
-%p #{@message}
-%p #{10 * 4}
+%html
+  .navi
+    %button.navi__button .navi__button
+    %button.navi__button.navi__button_red
+      \.navi__button_red
+    %button.navi__button .navi__button
+
+<div class="chat-side">
+  <div class="chat-side__user"></div>
+  <div class="chat-side_groups"></div>
+</div>
+
+ .chat-side
+    .chat-side__user
+    .chat-side_groups

@@ -2,8 +2,71 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-p{
- font-size: 100px;
- background-color: blue;
+.header {
+  background-color: white;
+  height: 180px;
+  position: fixed;
+  width: 100%;
+}
+
+.chat-side {
+  background-color: #253141;
+  width: 300px;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.left-content {
+  background-color: #2f3e51;
+  height: 100%;
+  width: 300px;
+  float: left;
+}
+
+
+.contents {
+  background-color: gray;
+  height: calc(100% - 180px);
+  padding-top: 180px;
+  width: 100%;
+}
+
+
+.contents-main {
+  height: 100%;
+  width: calc(100% - 300px);
+  float: right;
+  position: relative;
+}
+
+.footer {
+  height: 60px;
+  background-color: blue;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.navi {
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+  background-color: #fafafa;
+}
+.navi__button {
+  width: 200px;
+  padding: 16px 0;
+  border: 1px solid #ccc;
+}
+.navi__button_red {
+  background-color: red;
 }

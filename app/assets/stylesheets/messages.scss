@@ -9,7 +9,6 @@
   width: 300px;
   float: left;
 
-
   &-1 {
     height: 15%;
     width: 100%;
@@ -17,9 +16,36 @@
     position: relative;
   }
 
+   &-user-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 20px;
+    display: inline-block;
+    }
+
   &-2 {
     height: 85%;
     width: 100%;
     background-color: $chat__side2backcolor;
   }
 }
+
+a{
+  display: inline-block;
+}
+
+
+.chat__side-2{
+
+&-groupname{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+&-groupmessage{
+  font-size: 15px;
+}
+
+}
+
+

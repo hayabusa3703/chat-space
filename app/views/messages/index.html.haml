@@ -4,6 +4,9 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "UTF-8"}/
   %body
+  .wrapper
+    .notification
+      .notice メッセージが送信されました。
     .chat__side
       .chat__side-1
         .chat__side-user-name
@@ -32,21 +35,27 @@
             ccccccc
             %br/
     .chat-main
-    .chat-main__header
-      .chat-main__header-group.clearfix
-      .chat-main__header-group-name
-        グループネーム
-      .chat-main__header-group-edit
-        エディット
-      .chat-main__header-members
-        グループメンバー
-    .chat-main__body
-      .chat-main__body-messages-list
-        .chat-main__body-message.clearfix
-          .chat-main__body-message-name 小林幸夫
-          .chat-main__body-message-time ２０１７年８月４日
-          .chat-main__body-message-body 組み立てていこう
-          .chat-main__body-message-name 小林幸夫
-          .chat-main__body-message-time ２０１７年８月９日
-          .chat-main__body-message-body 組み立てていこう
-
+      .chat-main__header
+        .chat-main__header-group.clearfix
+        .chat-main__header-group-name
+          グループネーム
+        .chat-main__header-group-edit
+          エディット
+        .chat-main__header-members
+          グループメンバー
+      .chat-main__body
+        .chat-main__body-messages-list
+          .chat-main__body-message.clearfix
+            .chat-main__body-message-name 小林幸夫
+            .chat-main__body-message-time ２０１７年８月４日
+            .chat-main__body-message-body 組み立てていこう
+            .chat-main__body-message-name 小林幸夫
+            .chat-main__body-message-time ２０１７年８月９日
+            .chat-main__body-message-body 組み立てていこう
+        .chat-main__footer
+      / .chat__footer
+      /   .chat__footer-body
+      /     %form{action: "", method: :post}
+      /       %input{:type => "text", :placeholder => "type a message", :class => "input"}
+      /       %input{:type => "submit", :value => "Send", :class => "submit"}
+      /         %label{:class => "attachment"}

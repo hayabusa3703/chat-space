@@ -1,0 +1,110 @@
+.chat__main{
+  width: calc(100% - 300px);
+  height: 100%;
+  float: left;
+
+  &__header{
+     height:100px;
+     border-bottom: 1px solid #eeeeee;
+     padding:0 40px;
+     position: relative;
+   &__group.clearfix{
+    float:left;
+   }
+   &__group--name{
+     padding-top: 35px;
+     padding-bottom: 15px;
+     font-size: 20px;
+     color: gray;
+   }
+   &__group--edit{
+      height: 40px;
+      padding: 0 20px;
+      border: 2px #38AEF0 solid;
+      line-height: 40px;
+      position: absolute;
+      right: 40px;
+      top: 28px;
+      color: #38AEF0;
+   }
+
+   .clearfix {
+     clear:both;
+     content:"";
+     display: block;
+   }
+   &__group--member{
+     font-size: 12px;
+     color:#999999;
+   }
+  }
+ }
+
+.chat__main{
+
+  &__body{
+      height: calc( 100vh - 15% - 90px );
+      overflow-y: scroll;
+
+   &__messages--list{
+    padding-top: 26px;
+    padding-left: 40px;
+   }
+   &__message.clearfix{
+     padding:20px 0;
+   }
+   &__message--name{
+      color: #434A54;
+      font-size: 16px;
+      font-weight: bold;
+      float: left;
+   }
+   &__message--time{
+      color: #999;
+      font-size: 12px;
+      padding: 0 10px 10px;
+      float: left;
+   }
+   &__message--text{
+      color: #434A54;
+      clear: both;
+      padding-bottom: 40px;
+   }
+  }
+ }
+
+.chat__main__footer {
+    background-color: $footer;
+    width: calc(100vw - 300px);
+     height: 90px;
+     position: fixed;
+     bottom: 0;
+     padding: 20px 20px 0 20px;
+     box-sizing: border-box;
+     form {
+         margin: 0 20px;
+     }
+     .text {
+         border: none;
+         width: calc( 100% - 130px);
+         height: 50px;
+         padding-left: 1em;
+         float: left;
+     }
+     .submit {
+         color: $message;
+         background-color: $submit;
+         width: 100px;
+         height: 50px;
+         text-align: center;
+         border: none;
+         float: right;
+     }
+ }
+
+ .icon-edit{
+         position: relative;
+         right: 135px;
+         bottom: 35px;
+         float: right;
+ }

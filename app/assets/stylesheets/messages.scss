@@ -1,3 +1,7 @@
+.wrapper {
+   width: 100%;
+   height: 100%;
+ }
 
 .chat__side {
   height: 100vh;
@@ -5,7 +9,7 @@
   float: left;
 
   &-1 {
-    height: 15%;
+    height: 16%;
     width: 100%;
     background-color: $chat__side1backcolor;
     position: relative;
@@ -23,6 +27,7 @@
     height: 85%;
     width: 100%;
     background-color: $chat__side2backcolor;
+
   }
 }
 
@@ -34,14 +39,20 @@ a{
   color: white;
 }
 
+.icon-num1{
+  padding-left:90px;
+}
+
 .chat__side-2{
 
 &-groupname{
   font-size: 20px;
   margin-bottom: 5px;
+  color :white;
 }
 &-groupmessage{
   font-size: 15px;
+  color :white;
 }
 
 }

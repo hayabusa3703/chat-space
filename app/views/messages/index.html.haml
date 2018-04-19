@@ -12,9 +12,9 @@
         .chat__side-user-name
           小林幸夫
           %a{:href => "”http://example.jp”"}
-            %i.fa.fa-edit
+            %i.fa.fa-edit.icon-num1
           %a{:href => "”http://example2.jp”"}
-            %i.fa.fa-cog
+            %i.fa.fa-cog.icon-num2
       .chat__side-2
         .chat__side-2-groupname
           sampleグループ
@@ -51,11 +51,12 @@
             .chat-main__body-message-body 組み立てていこう
             .chat-main__body-message-name 小林幸夫
             .chat-main__body-message-time ２０１７年８月９日
-            .chat-main__body-message-body 組み立てていこう
-        .chat-main__footer
-      / .chat__footer
-      /   .chat__footer-body
-      /     %form{action: "", method: :post}
-      /       %input{:type => "text", :placeholder => "type a message", :class => "input"}
-      /       %input{:type => "submit", :value => "Send", :class => "submit"}
-      /         %label{:class => "attachment"}
+            .chat-main__body-message-body よろしくお願いします
+      .chat-main__footer
+        .chat-main__footer-body
+          %form{action: "", method: :post}
+            %input{:type => "text", :placeholder => "type a message", :class => "text"}
+            %input{:type => "submit", :value => "Send", :class => "submit"}
+            %i.fa.fa-image.icon-picture-edit
+
+

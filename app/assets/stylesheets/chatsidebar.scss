@@ -1,0 +1,57 @@
+
+.chat__side {
+  height: 100vh;
+  width: 300px;
+  float: left;
+
+  &-1 {
+    height: 15%;
+    width: 100%;
+    background-color: $chat__side1backcolor;
+    position: relative;
+  }
+
+   &-user-name {
+    color: $message;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 20px;
+    display: inline-block;
+    }
+
+  &-2 {
+    height: 85%;
+    width: 100%;
+    background-color: $chat__side2backcolor;
+
+  }
+}
+
+a{
+  display: inline-block;
+}
+
+.fa{
+}
+
+.icon-num1{
+  padding-left:90px;
+}
+
+.chat__side-2{
+
+&-groupname{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color :$message;
+}
+&-groupmessage{
+  font-size: 15px;
+  color :$message;
+  padding-bottom: 40px;
+}
+
+}
+
+
+

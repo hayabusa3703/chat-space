@@ -1,6 +1,4 @@
-
-
-.chat-main{
+.chat__main{
   width: calc(100% - 300px);
   height: 100%;
   float: left;
@@ -10,16 +8,16 @@
      border-bottom: 1px solid #eeeeee;
      padding:0 40px;
      position: relative;
-   &-group.clearfix{
+   &__group.clearfix{
     float:left;
    }
-   &-group-name{
+   &__group--name{
      padding-top: 35px;
      padding-bottom: 15px;
      font-size: 20px;
      color: gray;
    }
-   &-group-edit{
+   &__group--edit{
       height: 40px;
       padding: 0 20px;
       border: 2px #38AEF0 solid;
@@ -28,7 +26,6 @@
       right: 40px;
       top: 28px;
       color: #38AEF0;
-
    }
 
    .clearfix {
@@ -36,41 +33,39 @@
      content:"";
      display: block;
    }
-   &-members{
+   &__group--member{
      font-size: 12px;
      color:#999999;
    }
   }
  }
 
-
-.chat-main{
-
+.chat__main{
 
   &__body{
       height: calc( 100vh - 15% - 90px );
       overflow-y: scroll;
 
-   &-messages-list{
+   &__messages--list{
     padding-top: 26px;
     padding-left: 40px;
    }
-   &-message.clearfix{
+   &__message.clearfix{
      padding:20px 0;
    }
-   &-message-name{
+   &__message--name{
       color: #434A54;
       font-size: 16px;
       font-weight: bold;
       float: left;
    }
-   &-message-time{
+   &__message--time{
       color: #999;
       font-size: 12px;
       padding: 0 10px 10px;
       float: left;
    }
-   &-message-body{
+   &__message--text{
       color: #434A54;
       clear: both;
       padding-bottom: 40px;
@@ -78,10 +73,7 @@
   }
  }
 
-
-
-
-.chat-main__footer {
+.chat__main__footer {
     background-color: $footer;
     width: calc(100vw - 300px);
      height: 90px;
@@ -110,7 +102,7 @@
      }
  }
 
- .icon-picture-edit{
+ .icon-edit{
          position: relative;
          right: 135px;
          bottom: 35px;

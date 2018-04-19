@@ -2,27 +2,61 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "utf-8"}/
+    %meta{:charset => "UTF-8"}/
   %body
-    %header.header
-      .chat-side
-    .contents
-      .left-content
-      .contents-main
-        %footer.footer
+  .wrapper
+    .notification
+      .notice メッセージが送信されました。
+    .chat__side
+      .chat__side-1
+        .chat__side-user-name
+          小林幸夫
+          %a{:href => "”http://example.jp”"}
+            %i.fa.fa-edit.icon-num1
+          %a{:href => "”http://example2.jp”"}
+            %i.fa.fa-cog.icon-num2
+      .chat__side-2
+        .chat__side-2-groupname
+          sampleグループ
+          %br/
+        .chat__side-2-groupmessage
+          aaaaa
+          %br/
+        .chat__side-2-groupname
+          sampleグループ２
+          %br/
+        .chat__side-2-groupmessage
+          bbbbbbb
+          %br/
+        .chat__side-2-groupname
+          sampleグループ３
+          %br/
+          .chat__side-2-groupmessage
+            ccccccc
+            %br/
+    .chat-main
+      .chat-main__header
+        .chat-main__header-group.clearfix
+        .chat-main__header-group-name
+          グループネーム
+        .chat-main__header-group-edit
+          エディット
+        .chat-main__header-members
+          グループメンバー
+      .chat-main__body
+        .chat-main__body-messages-list
+          .chat-main__body-message.clearfix
+            .chat-main__body-message-name 小林幸夫
+            .chat-main__body-message-time ２０１７年８月４日
+            .chat-main__body-message-body 組み立てていこう
+            .chat-main__body-message-name 小林幸夫
+            .chat-main__body-message-time ２０１７年８月９日
+            .chat-main__body-message-body よろしくお願いします
+      .chat-main__footer
+        .chat-main__footer-body
+          %form{action: "", method: :post}
+            %input{:type => "text", :placeholder => "type a message", :class => "text"}
+            %input{:type => "submit", :value => "Send", :class => "submit"}
+            %i.fa.fa-image.icon-picture-edit
 
-%html
-  .navi
-    %button.navi__button .navi__button
-    %button.navi__button.navi__button_red
-      \.navi__button_red
-    %button.navi__button .navi__button
 
-<div class="chat-side">
-  <div class="chat-side__user"></div>
-  <div class="chat-side_groups"></div>
-</div>
-
- .chat-side
-    .chat-side__user
-    .chat-side_groups

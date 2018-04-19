@@ -1,72 +1,61 @@
-// Place all the styles related to the messages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper {
+   width: 100%;
+   height: 100%;
+ }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  background-color: white;
-  height: 180px;
-  position: fixed;
-  width: 100%;
-}
-
-.chat-side {
-  background-color: #253141;
+.chat__side {
+  height: 100vh;
   width: 300px;
-  height: 100%;
-  font-size: 20px;
-  font-weight: bold;
+  float: left;
+
+  &-1 {
+    height: 16%;
+    width: 100%;
+    background-color: $chat__side1backcolor;
+    position: relative;
+  }
+
+   &-user-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 20px;
+    display: inline-block;
+    }
+
+  &-2 {
+    height: 85%;
+    width: 100%;
+    background-color: $chat__side2backcolor;
+
+  }
+}
+
+a{
   display: inline-block;
 }
 
-.left-content {
-  background-color: #2f3e51;
-  height: 100%;
-  width: 300px;
-  float: left;
+.fa{
+  color: white;
+}
+
+.icon-num1{
+  padding-left:90px;
+}
+
+.chat__side-2{
+
+&-groupname{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color :white;
+}
+&-groupmessage{
+  font-size: 15px;
+  color :white;
+}
+
 }
 
 
-.contents {
-  background-color: gray;
-  height: calc(100% - 180px);
-  padding-top: 180px;
-  width: 100%;
-}
 
-
-.contents-main {
-  height: 100%;
-  width: calc(100% - 300px);
-  float: right;
-  position: relative;
-}
-
-.footer {
-  height: 60px;
-  background-color: blue;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-
-.navi {
-  border: 1px solid #ccc;
-  padding: 16px;
-  text-align: center;
-  background-color: #fafafa;
-}
-.navi__button {
-  width: 200px;
-  padding: 16px 0;
-  border: 1px solid #ccc;
-}
-.navi__button_red {
-  background-color: red;
-}

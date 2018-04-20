@@ -8,7 +8,7 @@
       .chat__side__top
         .chat__side__username
           小林幸夫
-        = link_to do
+        = link_to new_group_path do
           = fa_icon 'pencil-square-o', class: 'icon-num1'
           = link_to edit_user_registration_path(current_user) do
             = fa_icon 'cog', class: 'icon-num2'

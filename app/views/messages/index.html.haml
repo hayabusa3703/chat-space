@@ -3,15 +3,15 @@
   %head
   %body
   .wrapper
-    .notice メッセージが送信されました。
+    = render partial:'notifications'
     .chat__side
       .chat__side__top
         .chat__side__username
           小林幸夫
-          %a{:href => "”http://example.jp”"}
-            %i.fa.fa-edit.icon-num1
-          %a{:href => "”http://example2.jp”"}
-            %i.fa.fa-cog.icon-num2
+        = link_to do
+          = fa_icon 'pencil-square-o', class: 'icon-num1'
+          = link_to edit_user_registration_path(current_user) do
+            = fa_icon 'cog', class: 'icon-num2'
       .chat__side__bottom
         = render partial:"group-message"
     .chat__main
@@ -22,7 +22,7 @@
         .chat__main__header__group--edit
           エディット
         .chat__main__header__group--member
-          グループメンバー
+          = current_user.name
       .chat__main__body
         .chat__main__body__messages--list
           .chat__main__body__message.clearfix

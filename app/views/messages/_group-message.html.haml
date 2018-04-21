@@ -1,16 +1,15 @@
-.chat__side__bottom--groupname
-    sampleグループ
-    %br/
-.chat__side__bottom--groupmessage
-    aaaaa
-    %br/
-.chat__side__bottom--groupname
-    sampleグループ２
-    %br/
-.chat__side__bottom--groupmessage
-    bbbbb
-    %br/
-.chat__side__bottom--groupname
-    sampleグループ３
-    %br/
-.chat__side__bottom--groupmessage ccccc
+.chat__side
+  .chat__side__top
+    .chat__side__username
+      =current_user.name
+    = link_to new_group_path do
+      = fa_icon 'pencil-square-o', class: 'icon-num1'
+      = link_to edit_user_registration_path(current_user) do
+        = fa_icon 'cog', class: 'icon-num2'
+  .chat__side__bottom
+    - current_user.groups.each do |group|
+      = link_to messages_path(group) do
+        .chat__side__bottom--groupname
+          = group.name
+        .chat__side__bottom--groupmessage
+          メッセージはまだありません。

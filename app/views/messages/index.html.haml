@@ -4,16 +4,7 @@
   %body
   .wrapper
     = render partial:'notifications'
-    .chat__side
-      .chat__side__top
-        .chat__side__username
-          小林幸夫
-        = link_to new_group_path do
-          = fa_icon 'pencil-square-o', class: 'icon-num1'
-          = link_to edit_user_registration_path(current_user) do
-            = fa_icon 'cog', class: 'icon-num2'
-      .chat__side__bottom
-        = render partial:"group-message"
+    = render partial:"group-message"
     .chat__main
       .chat__main__header
         .chat__main__header__group.clearfix

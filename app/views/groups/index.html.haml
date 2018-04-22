@@ -5,24 +5,24 @@
   .wrapper
     = render partial:'notifications'
     = render partial:"group-message"
-    .chat__main
-      .chat__main__header
-        .chat__main__header__group.clearfix
-        .chat__main__header__group--name
-          グループネーム
-        .chat__main__header__group--edit
-          エディット
-        .chat__main__header__group--member
-          = current_user.name
-      .chat__main__body
-        .chat__main__body__messages--list
-          .chat__main__body__message.clearfix
-            = render partial:"contribute"
-      .chat__main__footer
-        .chat__main__footer--body
-          %form{action: "", method: :post}
-            %input{:type => "text", :placeholder => "type a message", :class => "text"}
-            %input{:type => "submit", :value => "Send", :class => "submit"}
-            %i.fa.fa-image.icon-edit
+    / .chat__main
+    /   .chat__main__header
+    /     .chat__main__header__group.clearfix
+    /     .chat__main__header__group--name
+    /       グループネーム
+    /     .chat__main__header__group--edit
+    /       エディット
+    /     .chat__main__header__group--member
+    /       = current_user.name
+    /   .chat__main__body
+    /     .chat__main__body__messages--list
+    /       .chat__main__body__message.clearfix
+    /         = render partial:"contribute"
+    /   .chat__main__footer
+    /     .chat__main__footer--body
+    /       %form{action: "", method: :post}
+    /         %input{:type => "text", :placeholder => "type a message", :class => "text"}
+    /         %input{:type => "submit", :value => "Send", :class => "submit"}
+    /         %i.fa.fa-image.icon-edit
 
 

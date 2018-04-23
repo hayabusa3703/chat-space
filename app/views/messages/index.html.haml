@@ -17,7 +17,7 @@
       .chat__main__body
         .chat__main__body__messages--list
           .chat__main__body__message.clearfix
-            = render partial:"groups/contribute"
+            = render @messages
       .chat__main__footer
         .form
           = form_for [@group, @message] do |f|

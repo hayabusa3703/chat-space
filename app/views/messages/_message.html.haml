@@ -1,0 +1,9 @@
+.chat__main__body__message--name
+  = message.user.name
+.chat__main__body__message--time
+  = message.posted_time
+.chat__main__body__message--text
+  - if message.content.present?
+    %p.lower-message__content
+      = message.content
+  = image_tag message.image.url, class: 'lower-message__image' if message.image.present?

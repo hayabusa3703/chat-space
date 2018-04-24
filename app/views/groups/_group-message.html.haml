@@ -8,8 +8,8 @@
         = fa_icon 'cog', class: 'icon-num2'
   .chat__side__bottom
     - current_user.groups.each do |group|
-      = link_to messages_path(group) do
+      = link_to group_messages_path(group) do
         .chat__side__bottom--groupname
           = group.name
         .chat__side__bottom--groupmessage
-          メッセージはまだありません。
+          = group.show_last_message

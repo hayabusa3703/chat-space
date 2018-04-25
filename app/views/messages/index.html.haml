@@ -27,11 +27,3 @@
               = f.submit 'Send', class: 'form__submit'
             %label.fa.fa-image.icon-edit
               = f.file_field :image, class: 'hidden'
-
-        / .chat__main__header__group--name
-        /   = @group.name
-        / = link_to edit_group_path(@group) do
-        /   .chat__main__header__group--edit
-        /     エディット
-        / .chat__main__header__group--member
-        /   = current_user.name

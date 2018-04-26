@@ -36,7 +36,6 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      console.log(data.image);
       var html = buildHTML(data);
       $('.chat__main__body__message').append(html);
       $('#message_image').val('');

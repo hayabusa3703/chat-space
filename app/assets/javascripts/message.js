@@ -35,8 +35,7 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.chat__main__body__message').append(html);
-      $('#message_image').val('');
-      $('.form__message').val('');
+      $('#new_message')[0].reset();
       $('.chat__main__body').animate({scrollTop: $('.chat__main__body')[0].scrollHeight}, 'swing');
       $('.form__submit').prop("disabled", false)
     })

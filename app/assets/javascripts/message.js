@@ -1,12 +1,9 @@
 $(document).on('turbolinks:load', function(){
 $(function(){
   function buildHTML(message) {
-    //${ message.image.url }
-    if (message.image) {
-      var image = `<img src=${message.image}>`;
-      console.log(image);
-    } else {
-      var image = "";
+    var image = "";
+    if (message.image){
+       image = `<img src=${message.image} class: 'lower-message__image'>`
     }
    var html = `<div class="chat__main__body__message--name">
                  ${message.user_name}

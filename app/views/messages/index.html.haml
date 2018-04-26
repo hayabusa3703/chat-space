@@ -9,9 +9,10 @@
       .chat__main__header
         .chat__main__header__group.clearfix
         .chat__main__header__group--name
-          グループネーム
-        .chat__main__header__group--edit
-          エディット
+          = @group.name
+          = link_to edit_group_path(@group) do
+            .chat__main__header__group--edit
+              エディット
         .chat__main__header__group--member
           = current_user.name
       .chat__main__body

@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def index
-    @user = User.where('name LIKE(?)', "%#{paramas[:keyword]}%")
+    @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(id: current_user.id)
     respond_to do |format|
       format.html
       format.json
@@ -25,10 +25,3 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email)
   end
 end
-
-
-def search
-    @products = Product.where('title LIKE(?)', "%#{params[:keyword]}%").limit(20)
-  end
-
-# モデルクラス名.where('検索するカラム名 LIKE(?)', "検索するキーワード")

@@ -10,11 +10,23 @@
     position: relative;
   }
 
+  &__usercontent {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
    &__username {
     color: $message;
     font-size: 20px;
     font-weight: bold;
-    margin: 20px 20px;
+    margin: 0 20px;
+    margin-right: 120px;
+    position: relative;
     display: inline-block;
     }
 
@@ -37,19 +49,14 @@
 }
 
 a{
+  font-size: inherit;
   display: inline-block;
 }
 
 .fa{
  font-size: inherit;
+  font-size: 1.3em
 }
-
-.icon-num1{
-  padding-left:220px;
-}
-
-
-
 
 .hidden{
  display: none;

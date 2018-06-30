@@ -4,3 +4,4 @@
   json.user_name  @message.user.name
   json.time @message.posted_time
   json.id @message.id
+  
